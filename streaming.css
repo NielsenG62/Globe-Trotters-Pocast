@@ -1,0 +1,259 @@
+@charset "utf-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* ------------------------------------------------------CSS Reset------------------------------------------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* -----------------------------------------------------End CSS reset--------------------------------------------- */
+
+/* Color Palette
+Sand (Body): #e8e6d0
+Green (Header): #7ca692
+Blue (Footer/Newest Ep): #4e6a77
+Brown (Small Eps): #856c54
+Light Green (Small Ep Text): #e8f2d0
+Red (Big Text): #8c0410
+*/
+
+
+
+html{
+    background-color: #e8e6d0;
+    font-family: 'Oswald', sans-serif;
+}
+#wrapper{
+    min-width: 1040px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+
+/* -----------------------------------------------------Header--------------------------------------------- */
+header{
+    background-color: #7ca692;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+h1{
+    text-decoration: none;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    flex: 1;
+    font-weight: bold;
+}
+h1 a{
+    text-decoration: none;
+    color: #8c0410;
+}
+nav{
+    margin-right: 100px;
+}
+nav li{
+    display: inline;
+    margin-left: 80px;
+}
+nav a{
+    text-decoration: none;
+    color: #8c0410;
+    font-size: 20px;
+    padding: 10px;
+}
+nav a:hover{
+    color: #ffffff;
+}
+nav h2{
+    visibility: hidden;
+    height: 0;
+}
+
+/* --------------------------------------Newest Episode Block----------------------------------------------------- */
+
+main h2{
+    text-align: center;
+    color: #8c0410;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+article{
+    background-color: #4e6a77;
+    max-width: 800px;
+    margin: auto;
+    padding: 25px;
+    display: flex;
+    color: #ffffff;
+}
+article img{
+    width: 205px;
+    height: 205px;
+}
+article h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 80px;
+}
+article p:first-of-type{
+    margin-left: 80px;
+    margin-right: 50px;
+    font-weight: lighter;
+    font-size: 19px;
+    line-height: 1.1;
+}
+#bottom-row{
+    display: flex;
+    align-items: center;
+    margin-top: 27px;
+    margin-left: 80px;
+    justify-content: space-between;
+}
+#bottom-row a{
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: lighter;
+}
+#bottom-row a:hover{
+    text-decoration: none;
+}
+#bottom-row p{
+    font-weight: lighter;
+    font-size: 12px;
+}
+audio{
+    max-width: 250px;
+    max-height: 30px;
+}
+/* -------------------------------------More Episodes------------------------------------------------------ */
+
+#more-episodes{    
+    max-width:800px;
+    margin: auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+section h3{
+    visibility: hidden;
+    height: 0;
+    display: none;
+}
+h4{
+    font-weight: bold;
+    color: #8c0410;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+h5{
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+}
+section img{
+    width: 50px;
+}
+section a{
+    display: flex;
+    background-color: #856c54;
+    color: #e8f2d0;
+    margin: 20px;
+    padding: 7px;
+    justify-content: space-between;
+}
+section a:hover{
+    color: #ffffff;
+}
+#more{
+    background-color: #7ca692;
+    max-width: 100px;
+    margin: auto;
+}
+#more h5{
+    font-weight: normal;
+}
+
+/* -------------------------------------Footer------------------------------------------------------ */
+
+footer{
+    background-color: #4e6a77;
+    color: #ffffff;
+    font-weight: lighter;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+footer ul{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+footer li{
+    padding-left: 25px;
+}
+footer a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+footer a:hover{
+    text-decoration: none;
+}
+footer small{
+    font-size: 13px;
+}
